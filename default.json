@@ -3,7 +3,6 @@
   "description": "Default shared Renovate preset covering npm and maven ecosystems",
   "extends": [
     "config:recommended",
-    ":semanticCommits",
     ":separateMultipleMajorReleases",
     "github>magnusp/renovate-config:npm",
     "github>magnusp/renovate-config:maven"
