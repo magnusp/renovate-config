@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate preset for npm ecosystem",
+  "packageRules": [
+    {
+      "description": "Automerge patch and minor updates for devDependencies",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    },
+    {
+      "description": "Group all eslint-related packages",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^eslint"],
+      "groupName": "eslint packages"
+    },
+    {
+      "description": "Group all jest-related packages",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^jest", "^@jest/", "jest-"],
+      "groupName": "jest packages"
+    },
+    {
+      "description": "Group all typescript-related packages",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^@typescript-eslint", "^typescript$"],
+      "groupName": "typescript packages"
+    }
+  ],
+  "rangeStrategy": "bump",
+  "labels": ["dependencies", "npm"]
+}

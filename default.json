@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default shared Renovate preset covering npm and maven ecosystems",
+  "extends": [
+    "config:recommended",
+    ":separateMultipleMajorReleases",
+    "github>magnusp/renovate-config:npm",
+    "github>magnusp/renovate-config:maven"
+  ]
+}
