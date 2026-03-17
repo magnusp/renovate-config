@@ -12,7 +12,7 @@ The main preset that extends both the `npm` and `maven` presets along with Renov
 
 ```json
 {
-  "extends": ["github>magnusp/renovate-config"]
+  "extends": ["github>magnusp-org/renovate-config"]
 }
 ```
 
@@ -29,7 +29,7 @@ Preset with rules specific to the npm ecosystem:
 
 ```json
 {
-  "extends": ["github>magnusp/renovate-config:npm"]
+  "extends": ["github>magnusp-org/renovate-config:npm"]
 }
 ```
 
@@ -46,7 +46,7 @@ Preset with rules specific to the maven ecosystem:
 
 ```json
 {
-  "extends": ["github>magnusp/renovate-config:maven"]
+  "extends": ["github>magnusp-org/renovate-config:maven"]
 }
 ```
 
@@ -57,8 +57,8 @@ You can compose presets as needed:
 ```json
 {
   "extends": [
-    "github>magnusp/renovate-config:npm",
-    "github>magnusp/renovate-config:maven"
+    "github>magnusp-org/renovate-config:npm",
+    "github>magnusp-org/renovate-config:maven"
   ]
 }
 ```
