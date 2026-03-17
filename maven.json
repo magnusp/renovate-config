@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate preset for maven ecosystem",
+  "packageRules": [
+    {
+      "description": "Group all Spring Boot dependencies",
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["^org\\.springframework\\.boot:"],
+      "groupName": "Spring Boot",
+      "automerge": false
+    },
+    {
+      "description": "Group all Spring Framework dependencies",
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["^org\\.springframework:"],
+      "groupName": "Spring Framework",
+      "automerge": false
+    },
+    {
+      "description": "Automerge patch updates for Maven test dependencies",
+      "matchManagers": ["maven"],
+      "matchDepTypes": ["test"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    }
+  ],
+  "labels": ["dependencies", "maven"]
+}
