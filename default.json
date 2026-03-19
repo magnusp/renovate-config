@@ -6,5 +6,12 @@
     ":separateMultipleMajorReleases",
     "github>magnusp/renovate-config:npm",
     "github>magnusp/renovate-config:maven"
-  ]
+  ],
+  "dependencyDashboard": true,
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "addLabels": ["critical-fix"],
+    "dependencyDashboardApproval": false,
+    "enabled": true
+  }
 }
